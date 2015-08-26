@@ -8,6 +8,13 @@ namespace MGE.Framework
         public MGEWindow Window;
         public List<GameObject> LevelObjects;
 
+        public Level () { }
+
+        public Level(MGEWindow window)
+        {
+            Window = window;
+        }
+
         public void Initialize ()
         {
             foreach (GameObject go in LevelObjects)
