@@ -8,8 +8,19 @@ namespace MGE.Framework
         public MGEWindow Window;
         public List<GameObject> LevelObjects;
 
-        public void Initialize () { }
+        public void Initialize ()
+        {
+            foreach (GameObject go in LevelObjects)
+            {
+                go.Initialize();
+            }
+        }
 
+        /// <summary>
+        /// Create a new object in the level
+        /// </summary>
+        /// <typeparam name="T">The type of the object</typeparam>
+        /// <returns>The object instantaited</returns>
         public T InstatiateGameObject<T>() where T : GameObject, new()
         {
             T obj = new T();
@@ -18,12 +29,36 @@ namespace MGE.Framework
             return obj;
         } 
 
-        public void LoadContent() { }
+        public void LoadContent()
+        {
+            foreach (GameObject go in LevelObjects)
+            {
+                go.LoadContent();
+            }
+        }
 
-        public void UnloadContent () { }
+        public void UnloadContent ()
+        {
+            foreach (GameObject go in LevelObjects)
+            {
+                go.UnloadContent();
+            }
+        }
 
-        public void Update () { }
+        public void Update ()
+        {
+            foreach (GameObject go in LevelObjects)
+            {
+                go.Update();
+            }
+        }
 
-        public void Draw() { }
+        public void Draw()
+        {
+            foreach (GameObject go in LevelObjects)
+            {
+                go.Draw();
+            }
+        }
     }
 }
