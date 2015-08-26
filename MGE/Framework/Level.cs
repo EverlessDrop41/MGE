@@ -10,9 +10,12 @@ namespace MGE.Framework
 
         public void Initialize () { }
 
-        public void Instatiate(GameObject obj)
+        public T InstatiateGameObject<T>() where T : GameObject, new()
         {
+            T obj = new T();
+            obj.level = this;
             LevelObjects.Add(obj);
+            return obj;
         } 
 
         public void LoadContent() { }

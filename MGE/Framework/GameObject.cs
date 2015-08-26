@@ -7,6 +7,8 @@ namespace MGE.Framework
     {
         public Level level;
 
+        public GameObject () { }
+
         public GameObject (Level l)
         {
             level = l;
