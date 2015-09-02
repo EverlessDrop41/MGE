@@ -14,14 +14,14 @@ namespace MGE.Framework
             level = l;
         }
 
-        public void Initialize() { }
+        public virtual void Initialize() { }
 
-        public void LoadContent() { }
+        public virtual void LoadContent() { }
 
-        public void UnloadContent() { }
+        public virtual void UnloadContent() { }
 
-        public void Update() { }
+        public virtual void Update() { }
 
-        public void Draw() { }
+        public virtual void Draw() { }
     }
 }

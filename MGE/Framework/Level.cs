@@ -15,7 +15,7 @@ namespace MGE.Framework
             Window = window;
         }
 
-        public void Initialize ()
+        public virtual void Initialize ()
         {
             foreach (GameObject go in LevelObjects)
             {
@@ -36,7 +36,7 @@ namespace MGE.Framework
             return obj;
         } 
 
-        public void LoadContent()
+        public virtual void LoadContent()
         {
             foreach (GameObject go in LevelObjects)
             {
@@ -44,7 +44,7 @@ namespace MGE.Framework
             }
         }
 
-        public void UnloadContent ()
+        public virtual void UnloadContent ()
         {
             foreach (GameObject go in LevelObjects)
             {
@@ -52,7 +52,7 @@ namespace MGE.Framework
             }
         }
 
-        public void Update ()
+        public virtual void Update ()
         {
             foreach (GameObject go in LevelObjects)
             {
@@ -60,7 +60,7 @@ namespace MGE.Framework
             }
         }
 
-        public void Draw()
+        public virtual void Draw()
         {
             foreach (GameObject go in LevelObjects)
             {
