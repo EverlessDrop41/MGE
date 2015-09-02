@@ -7,12 +7,14 @@ namespace MGE.Framework
     {
         public MGEWindow Window;
         public List<GameObject> LevelObjects;
+        public Camera cam;
 
         public Level () { }
 
         public Level(MGEWindow window)
         {
             Window = window;
+            cam = new Camera(window);
         }
 
         public virtual void Initialize ()
