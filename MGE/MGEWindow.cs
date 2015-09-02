@@ -2,6 +2,8 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+using MGE.Framework;
+
 namespace MGE
 {
     /// <summary>

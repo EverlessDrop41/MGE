@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MGE.Framework
 {
-    class Level
+    class Level : IMGEObject
     {
         public MGEWindow Window;
         public List<GameObject> LevelObjects;
