@@ -11,8 +11,8 @@ namespace MGE
     /// </summary>
     public class MGEWindow : Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        public GraphicsDeviceManager graphics { get; private set; }
+        public SpriteBatch spriteBatch { get; private set; }
 
         public MGEWindow()
         {
