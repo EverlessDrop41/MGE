@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Framework\Camera.cs" />
+    <Compile Include="Framework\Examples\CameraExample.cs" />
     <Compile Include="Framework\GameObject.cs" />
     <Compile Include="Framework\IMGEObject.cs" />
     <Compile Include="Framework\Level.cs" />
@@ -62,9 +63,7 @@
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Framework\Examples\" />
-  </ItemGroup>
+  <ItemGroup />
   <!-- Specify the search path explicitly so the ResolveAssemblyReferences task picks the right ones -->
   <Target Name="BeforeResolveReferences">
     <CreateProperty Value="$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows;$(AssemblySearchPaths)">
